@@ -26,6 +26,8 @@ new class extends Component {
             return redirect()->to('/login');
         }
 
+        
+
         // Cek Kelengkapan lewat relasi
         if (!$this->user->anggota) {
             $this->isLengkap = false;
